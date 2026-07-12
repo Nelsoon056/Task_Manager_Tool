@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Administrador de Tareas</title>
+</head>
+<body>
+    <header>
+        <div id="titulo">
+            <h1>Gestor De Tareas</h1>
+            <img src="assets/icons/logo.png" alt="Logo" id="logo">
+        </div>
+        <div id="tema">
+            <button id="boton_tema">
+                <div id="circulo"></div>
+            </button>
+            <p id="texto_boton">Modo Claro</p>
+        </div>
+    </header>
+    <main>
+        <section id="tareas">
+            <div id="vacio">
+                <p id="texto_vacio">No hay ninguna tarea pendiente <br> presiona el botón + para añadir una nueva tarea</p>
+            </div>
+        </section>
+        <div id="agregar">
+            <button id="agregar_boton">
+                <img src="assets/img/añadir.png" alt="anadir" id="agregar_img">
+            </button>
+        </div>
+        <section id="info_card" class="bajar">
+            <div id="card">
+                <h2>¿Cómo usar la página?</h2>
+                <p>Presiona el boton + para añadir tareas y una vez completadas puedes presionarla casilla inferior para marcarla como completa, también tienes la opción de editar o eliminar</p>
+                <p>Desarrollado por <a href="https://github.com/Nelsoon056" target="_blank">Nelsoon Sandoval</a></p>
+                <button onclick="mostrarCard()" id="cerrar">
+                    Cerrar
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="info" onclick="mostrarCard()">
+            <img src="assets/img/info.png" alt="info" id="info_img">
+        </button>
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>

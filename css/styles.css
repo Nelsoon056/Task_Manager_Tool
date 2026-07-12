@@ -1,0 +1,228 @@
+*{
+    transition: 0.5s;
+    margin: 0;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+/* .radio-canada-big-<uniquifier> {
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+
+:root {
+    --negro: #06141B;
+    --azul-oscuro: #11212D;
+    --azul-gris: #1669A9;
+    --gris: #4A5C6A;
+    --gris-claro: #DBDEDF;
+    --blanco: #EFEFEF;
+    --azul: #0F87E5;
+    --blanco-oscuro: #B8BCC0;
+
+}
+
+.modo_claro {
+    --negro: #DBDEDF;
+    --azul-oscuro: #EFEFEF;
+    --blanco: #000;
+    --azul-gris: #0F87E5;
+}
+
+body{
+    background: var(--negro);
+    overflow: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background: var(--azul-oscuro);
+    display: flex;
+}
+
+h1 {
+    color: var(--blanco);
+    margin: 0 0 0 2.5%;
+    font-size: 43px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+#texto_vacio {
+    color: var(--gris);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#titulo {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#tema {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton_tema {
+    width: 60px;
+    height: 25px;
+    background: var(--negro);
+    border: none;
+    border-radius: 30px;
+    margin: 15px 15% 0 0;
+    cursor: pointer;
+}
+
+#circulo {
+    height: 25px;
+    width: 25px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#texto_boton {
+    color: var(--blanco);
+    font-size: 14px;
+    margin: 5px 12% 0 0;
+}
+
+main {
+    height: 85vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 5vh;
+    width: 100vw;
+}
+
+#info {
+    background: none;
+    border: none;
+    margin: 0 0 0 0.5%;
+    cursor: pointer;
+}
+
+#tareas {
+    height: 90%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#agregar {
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#agregar_boton {
+    background: var(--azul-gris);
+    border-radius: 50%;
+    border: none;
+    padding: 7px 5px 5px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#agregar_boton:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#agregar_img {
+    width: 45px;
+    height: 40px;
+}
+
+.mover_circulo {
+    transform: translateX(26px);
+    transition: 0.5s;
+}
+
+#info_card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    background: #0008;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    height: 45vh;
+    width: 35vw;
+    background: var(--azul-oscuro);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.bajar {
+    transform: translateY(100vh);
+}
+
+#cerrar {
+    background: var(--azul-gris);
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    color: #EDEDED;
+    cursor: pointer;
+    font-size: 4px 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: var(--blanco);
+    margin: 10px;
+}
+
+p {
+    color: var(--gris);
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+}
+
+#cerrar:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+a {
+    color: var(--azul-gris);
+    text-decoration: none;
+}
