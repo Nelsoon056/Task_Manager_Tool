@@ -51,8 +51,8 @@ h1 {
 }
 
 #logo {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     margin: 0 10px;
 }
 
@@ -164,7 +164,7 @@ footer {
     transition: 0.5s;
 }
 
-#info_card {
+#info_card, #agregar_card {
     position: fixed;
     top: 0;
     left: 0;
@@ -176,6 +176,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#agregar_card {
+    background: none;
 }
 
 #card {
@@ -225,4 +229,66 @@ p {
 a {
     color: var(--azul-gris);
     text-decoration: none;
+}
+
+form {
+    height: 50vh;
+    width: 40vw;
+    background: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+input {
+    margin: 10px 30px;
+    background: var(--negro);
+    color: var(--blanco);
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    width: 80%;
+    height: 25px;
+    font-size: 16px;
+}
+
+label {
+    color: var(--blanco);
+    margin: 10px 20px;
+    font-size: 20px;
+}
+
+#subir_tarea {
+    background: var(--azul-gris);
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    color: var(--blanco);
+    margin: 10% 0 10% 40%;
+    cursor: pointer;
+    color: #EDEDED;
+    font-size: 16px;
+}
+
+#basura:hover {
+    transform: scale(1.2);
+}
+
+#subir_tarea:hover {
+    transform: scale(1.1);
+}
+
+#agregar_cerrar {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#agregar_cerrar_boton {
+    background: none;
+    border: none;
+    cursor: pointer;
 }

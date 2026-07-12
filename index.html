@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons/logo.ico">
     <title>Administrador de Tareas</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
             </div>
         </section>
         <div id="agregar">
-            <button id="agregar_boton">
+            <button id="agregar_boton" onclick="mostrarAgg()">
                 <img src="assets/img/añadir.png" alt="anadir" id="agregar_img">
             </button>
         </div>
@@ -42,6 +43,20 @@
                     Cerrar
                 </button>
             </div>
+        </section>
+        <section id="agregar_card" class="bajar">
+            <form>
+                <div id="agregar_cerrar">
+                    <button id="agregar_cerrar_boton" type="button" onclick="mostrarAgg()">
+                        <img src="assets/img/borrar.png" alt="cerrar" id="basura">
+                    </button>
+                </div>
+                <label for="nombre">Nombre de la Tarea</label>
+                <input type="text" id="nombre" placeholder="sacar la basura">
+                <label for="descripcion">Descripcion de la Tarea</label>
+                <input type="text" id="descripcion" placeholder="Sacar la basura de la casa antes de las 9:00">
+                <button id="subir_tarea">Agregar Tarea</button>
+            </form>
         </section>
     </main>
     <footer>
