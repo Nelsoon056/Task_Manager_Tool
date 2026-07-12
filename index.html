@@ -30,7 +30,7 @@
             </div>
         </section>
         <div id="agregar">
-            <button id="agregar_boton" onclick="mostrarAgg()">
+            <button id="agregar_boton" onclick="abrirAgregar()">
                 <img src="assets/img/añadir.png" alt="anadir" id="agregar_img">
             </button>
         </div>
@@ -45,14 +45,15 @@
             </div>
         </section>
         <section id="agregar_card" class="bajar">
-            <form>
+            <form id="form_tarea">
                 <div id="agregar_cerrar">
-                    <button id="agregar_cerrar_boton" type="button" onclick="mostrarAgg()">
+                    <button id="agregar_cerrar_boton" type="button" onclick="cerrarFormulario()">
                         <img src="assets/img/borrar.png" alt="cerrar" id="basura">
                     </button>
                 </div>
+                <h2 id="titulo_form">Agregar Tarea</h2>
                 <label for="nombre">Nombre de la Tarea</label>
-                <input type="text" id="nombre" placeholder="sacar la basura">
+                <input type="text" id="nombre" placeholder="sacar la basura" required>
                 <label for="descripcion">Descripcion de la Tarea</label>
                 <input type="text" id="descripcion" placeholder="Sacar la basura de la casa antes de las 9:00">
                 <button id="subir_tarea">Agregar Tarea</button>
